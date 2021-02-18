@@ -44,9 +44,6 @@ nav div.container div.navbar-nav a.nav-link{
     transition: .4s;
     position: relative;
 }
-nav div.container a.logo:hover{
-    color: #e79e16;
-}
 .hamburger{
     flex-direction: column !important;
 }
@@ -165,7 +162,6 @@ div.container div.service p.total-project{
 div.skills .container .row .FE,
 div.skills .container .row .BE{    
     padding: 15px;
-    /* box-shadow: 0 1px 3px rgba(231, 158, 22,.3); */
     margin-bottom: 35px;
     position: relative;
     overflow: hidden;
@@ -202,10 +198,15 @@ footer p span{
         margin: 50px 0 50px;
     }
     div.banner{
+        text-align: justify;
         transform: translateY(-33px);
     }
     div.banner .icon-sosmed{
         margin-bottom: 20px;
+    }
+    div.banner .container #facebook, #instagram,#github{
+        height: 40px !important; 
+        width: 40px;
     }
     div.banner .container img.foto-profile{
         width: 200px;
