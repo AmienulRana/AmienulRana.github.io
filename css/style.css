@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:black !important;
+    position: relative;
+}
+body p {
+    color: rgb(230, 230, 230);
+    font-family: 'Nunito', sans-serif;
+}
+body h2{
+    font-family: 'Varela Round', sans-serif !important;
+    font-weight: 600;
+    color: rgb(230, 230, 230);
+}
+body hr{
+    width: 50px;
+    height: 3px;
+    border-radius: 3px;
+    background-color:#e79e16 !important;
+    margin: auto;
+}
+body h4{
+    color:rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+}
+nav{
+    font-family: 'Nunito', sans-serif;
+    border-bottom: 2px solid rgb(31, 31, 31);
+    background: black;
+}
+nav .container a.logo{
+    font-size: 23px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    transition: .4s;
+    font-family: 'Varela Round', sans-serif !important;
+}
+nav div.container div.navbar-nav a.nav-link{
+    color: rgb(80, 80, 80);
+    font-weight: 600;
+    transition: .4s;
+    position: relative;
+}
+nav div.container a.logo:hover{
+    color: #e79e16;
+}
+.hamburger{
+    flex-direction: column !important;
+}
+.hamburger span{
+  width: 25px;
+  height: 3px;
+  background:#e79e16;
+  margin: 3px;
+  border-radius: 2px;
+}
+.hamburger span:nth-child(2){
+    width: 18px !important;
+    align-self: flex-end;
+}
+.hamburger span:nth-child(3){
+    width: 13px !important;
+    align-self: flex-end;
+}
+div.banner .container #facebook, #instagram,#github{
+    height: 35px !important; 
+    width: 35px;
+    padding: 5px; 
+    color: rgb(255, 255, 255); 
+    border: 3px solid #e79e16; 
+    border-radius: 50%;
+    margin-right:19px !important;
+}
+div.about div.container p span{
+    color: #e79e16;
+    font-weight: 600;
+}
+div.skills .container .FE span:nth-child(1),
+div.skills .container .BE span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left, rgba(231, 158, 22,.6),rgba(47, 33, 5, 0.3));
+    width: 100%;
+    height: 2px;
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+div.skills .container .FE span:nth-child(2),
+div.skills .container .BE span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right:0;
+    background: linear-gradient(to top, rgba(231, 158, 22,.6),rgba(47, 33, 5, 0.3));
+    width: 2px;
+    height:100%;
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+
+}
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+div.skills .container .FE span:nth-child(3),
+div.skills .container .BE span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(231, 158, 22,.6),rgba(47, 33, 5, 0.3));
+    width: 100%;
+    height:2px;
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+div.skills .container .FE span:nth-child(4),
+div.skills .container .BE span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(231, 158, 22,.6),rgba(47, 33, 5, 0.3));
+    height: 100%;
+    width:2px;
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+div.container div.service h4{
+    margin-top: 20px;
+}
+div.container div.service p.total-project{
+    color: #e79e16;
+    line-height: 15px;
+    font-weight: 600;
+}
+div.skills .container .row .FE,
+div.skills .container .row .BE{    
+    padding: 15px;
+    /* box-shadow: 0 1px 3px rgba(231, 158, 22,.3); */
+    margin-bottom: 35px;
+    position: relative;
+    overflow: hidden;
+}
+div.skills .container h4{
+    color: rgb(255, 255, 255);
+    font-weight: 600 !important;
+    text-align: center;
+}
+div.skills .container .row .skill #html, #css, #js,#bootstrap,#nodeJs,#php{
+    font-size: 44px !important;
+    color: #e79e16 !important;
+}
+
+footer .container .col{
+    margin-top: 80px;
+}
+footer p span{
+    color: #e79e16;
+    font-weight: 600;
+}
+
+
+
+
+
+
+/* Responsive Breakpoint */
+@media (max-width: 575.98px) {
+    body h2{
+     font-size: 20px;
+    }
+    div.container .col.text-center{
+        margin: 50px 0 50px;
+    }
+    div.banner{
+        transform: translateY(-25px);
+    }
+    div.banner .icon-sosmed{
+        transform: translateY(20px);
+    }
+    div.banner .container img.foto-profile{
+        width: 200px;
+    }
+    div.about{
+        margin-top:10px;
+    }
+    div.portofolio .container br{
+        display: none;
+    }
+    div.portofolio .container img{
+        margin-bottom: 55px;
+        margin-top: 10px;
+    }
+    div.skills .container .skill h4{
+        margin:10px auto 25px;
+    }
+    div.skills .container .icon-skill{
+        margin-bottom: 25px;
+    }
+    #particles-js{
+        display: none;
+    }
+}
+
+ @media (max-width: 767.98px) {
+    body h2{
+        font-size: 24px;
+    }
+    div.container .col.text-center{
+        margin: 50px 0 50px;
+    }
+    div.banner{
+        margin-bottom: 20px;
+    }
+    div.banner .container #facebook,#instagram,#github{
+        margin-top: 23px;
+    }
+    div.portofolio .container img{
+        margin-bottom: 80px;
+    }
+    div.skills .container h4{
+        margin:25px auto;
+    }
+    div.skills .container .icon-skill{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 991.98px){
+    body h2{
+        font-size: 26px;
+    }
+    div.container .col.text-center{
+        margin: 100px auto 50px;
+    }
+    div.banner{
+        margin: 130px 0 10px;
+    }
+    div.banner .container h2.hallo{
+        font-size: 26px;
+        margin-top: 15px;
+    }
+    div.portofolio .container img{
+        margin-bottom: 80px;
+    }
+    div.skills .container h4{
+        margin:15px auto;
+    }
+    div.skills .container .icon-skill{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #particles-js{
+        top: -200px;
+        left: 0;
+    }
+}
+
+@media (min-width: 991.98px) { 
+    div.container .col.text-center{
+        margin: 100px auto 50px;
+    }
+    div.banner{
+        margin:150px 0;
+    }
+    div.banner .container #facebook,#instagram,#github{
+       margin-bottom: 10px;
+    }
+    div.about .container div.nama-lengkap{
+        margin-bottom: 30px;
+    }
+    div.portofolio{
+        margin-bottom:100px ;
+    }
+    div.skills{
+        margin-bottom: 100px;
+    }
+    div.skills .container .skill h4{
+        margin:10px auto 25px;
+    }
+    #particles-js{
+        height: 400px; 
+        top: 0;
+        transform: translateY(-100px);
+    }
+}
+
+@media (max-width: 1199.98px){}
