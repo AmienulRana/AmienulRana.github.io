@@ -202,10 +202,10 @@ footer p span{
         margin: 50px 0 50px;
     }
     div.banner{
-        transform: translateY(-28px);
+        transform: translateY(-33px);
     }
     div.banner .icon-sosmed{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     div.banner .container img.foto-profile{
         width: 200px;
