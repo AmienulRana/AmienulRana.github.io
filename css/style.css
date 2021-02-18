@@ -202,10 +202,10 @@ footer p span{
         margin: 50px 0 50px;
     }
     div.banner{
-        transform: translateY(-25px);
+        transform: translateY(-28px);
     }
     div.banner .icon-sosmed{
-        transform: translateY(20px);
+        margin-bottom: 7px;
     }
     div.banner .container img.foto-profile{
         width: 200px;
@@ -215,6 +215,9 @@ footer p span{
     }
     div.portofolio .container br{
         display: none;
+    }
+    div.portofolio .container .col-12.portofolio{
+        text-align: center;
     }
     div.portofolio .container img{
         margin-bottom: 55px;
