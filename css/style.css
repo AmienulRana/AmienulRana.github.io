@@ -83,6 +83,14 @@ div.about div.container p span{
     color: #e79e16;
     font-weight: 600;
 }
+div.portofolio .container .col-12.portofolio img{
+    transition: .6s;
+}
+div.portofolio .container .col-12.portofolio img:hover{
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 5px rgb(231, 158, 22), -1px -1px 5px rgb(231, 158, 22);
+    opacity: .7;
+}
 div.skills .container .FE span:nth-child(1),
 div.skills .container .BE span:nth-child(1){
     position: absolute;
@@ -158,14 +166,6 @@ div.skills .container .BE span:nth-child(4){
     100%{
         transform: translateY(-100%);
     }
-}
-div.container div.service h4{
-    margin-top: 20px;
-}
-div.container div.service p.total-project{
-    color: #e79e16;
-    line-height: 15px;
-    font-weight: 600;
 }
 div.skills .container .row .FE,
 div.skills .container .row .BE{    
@@ -301,6 +301,30 @@ footer p span{
 @media (min-width: 991.98px) { 
     div.container .col.text-center{
         margin: 100px auto 50px;
+    }
+    nav div.container div.navbar-nav a.nav-link{
+       position: relative;
+       overflow: hidden;
+    }
+    nav div.container div.navbar-nav a.nav-link:hover::after{
+       content: '';
+       display: block;
+       width: 50px;
+       height: 2px;
+       position: absolute;
+       background: #e79e16;
+       bottom: 0;
+       animation: garis .5s;
+    }
+    @keyframes garis {
+        0%{
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100%{
+            transform: none;
+            opacity: 1;
+        }
     }
     div.banner{
         margin:150px 0;
