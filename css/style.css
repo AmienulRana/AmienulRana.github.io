@@ -62,6 +62,14 @@ nav div.container div.navbar-nav a.nav-link{
     width: 13px !important;
     align-self: flex-end;
 }
+div.banner .container .hide {
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+div.banner .container .hide span.text {
+    transform: translateY(100%);
+    display: inline-block;
+}
 div.banner .container #facebook, #instagram,#github{
     height: 35px !important; 
     width: 35px;
