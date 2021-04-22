@@ -326,21 +326,25 @@ footer p span {
   nav div.container div.navbar-nav a.nav-link {
     position: relative;
     overflow: hidden;
+    margin-left: 20px !important;
   }
   nav div.container div.navbar-nav a.nav-link:hover::after {
     content: "";
     display: block;
-    width: 50px;
+    width: 85px;
     height: 2px;
     position: absolute;
     background: #e79e16;
     bottom: 0;
     animation: garis 0.5s;
   }
+  nav div.container div.navbar-nav a.nav-link.aktif {
+    color: white;
+  }
   nav div.container div.navbar-nav a.nav-link.aktif::after {
     content: "";
     display: block;
-    width: 50px;
+    width: 85px;
     height: 2px;
     position: absolute;
     background: #e79e16;
@@ -349,7 +353,7 @@ footer p span {
   }
   @keyframes garis {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(-80%);
       opacity: 0;
     }
     100% {
