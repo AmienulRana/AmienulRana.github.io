@@ -311,6 +311,9 @@ footer p span {
 }
 
 @media (min-width: 767.98px) and (max-width: 991.98px) {
+  body p{
+    font-size: normal !important;
+  }
   body h2 {
     font-size: 26px;
   }
