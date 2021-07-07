@@ -28,6 +28,10 @@
       "onclick": {
         "enable": true,
         "mode": "push"
+      },
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
       }
     }
   }
