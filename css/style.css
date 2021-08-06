@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-color: #322d5d !important;
+  background-color: #181432 !important;
   position: relative;
 }
 body p {
@@ -30,7 +30,7 @@ body h4 {
 nav {
   font-family: "Nunito", sans-serif;
   border-bottom: 2px solid #696969;
-  background: #322d5d;
+  background: #181432;
 }
 nav .container a.logo {
   font-size: 23px;
@@ -64,7 +64,7 @@ nav div.container div.navbar-nav a.nav-link {
   align-self: flex-end;
 }
 div.banner .container .hide {
-  background: #322d5d;
+  background: #181432;
   overflow: hidden;
 }
 div.banner .container .hide span.text {
